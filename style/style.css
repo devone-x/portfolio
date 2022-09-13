@@ -11,7 +11,7 @@
   font-family: Poppins;
 }
 body {
-  background: #ecf0f3;
+  background: #f1f2f3;
 }
 
 /* NAVBAR */
@@ -113,7 +113,7 @@ body {
   width: 280vw;
   position: absolute;
   left: 50%;
-  top: 33%;
+  top: 30%;
   z-index: -69;
   transform: translate(-50%, 0);
   border-radius: 100%;
@@ -139,7 +139,7 @@ body {
 
 /* PROJECT SECTION */
 #projects {
-  padding: 10vh 0;
+  padding: 20vh 1rem;
 }
 
 .d-flex .dark-blue {
