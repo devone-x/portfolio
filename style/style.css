@@ -1,0 +1,252 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/*EXTERNAL FONT */
+@font-face {
+  font-family: bigJohn;
+  src: url(BIG-JOHN.otf);
+}
+
+* {
+  font-family: Poppins;
+}
+body {
+  background: #ecf0f3;
+}
+
+/* NAVBAR */
+.dark-blue {
+  background: linear-gradient(
+    45deg,
+    rgba(36, 54, 102, 1) 0%,
+    rgb(42, 36, 102) 100%
+  );
+}
+
+.brand {
+  position: relative;
+  font-family: bigJohn;
+  top: 3px;
+}
+
+.navbar-toggler {
+  transition: 0.5s;
+  border-radius: 1.5rem;
+}
+
+.navbar-toggler:hover {
+  border: 3px solid rgba(40, 229, 196, 0.75);
+  border-radius: 1.5rem;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.navbar .collapse {
+  border-top: 2px solid #fff;
+  margin: 1.3rem 0;
+  padding: 1rem 0;
+  transition: 0.2s;
+}
+/*END NAVBAR */
+
+.display-4 {
+  border-bottom: 3px solid rgba(53, 82, 158, 1);
+}
+
+/* LANDING PAGE */
+#home {
+  height: 100vh;
+}
+
+.landing-page {
+  background-image: url("../img/coding.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.landing-page .d-flex {
+  background: linear-gradient(
+    0deg,
+    rgba(36, 54, 102, 1) 0%,
+    rgba(40, 36, 102, 0.7) 100%
+  );
+  width: 100%;
+}
+
+.landing-page .d-flex .btn,
+.green-btn {
+  background: linear-gradient(
+    75deg,
+    rgb(83, 255, 232) 0%,
+    rgb(83, 217, 255) 100%
+  );
+  border-radius: 2rem;
+  transition: 0.3s;
+  color: #000;
+}
+
+.landing-page .d-flex .btn:hover {
+  background: none;
+  color: #fff;
+  border: 0.2rem solid rgb(40, 229, 196);
+  outline: none;
+  box-shadow: none;
+  transition: 0.3s;
+}
+
+.content .img {
+  position: absolute;
+  margin: auto;
+  z-index: -69;
+  transform: scale(3);
+}
+/* END LANDING PAGE  */
+
+/*CONTENT*/
+.p-3 .d-flex .card {
+  border-radius: 2.3rem;
+  backdrop-filter: blur(8px);
+}
+
+.circle {
+  height: 80rem;
+  width: 280vw;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  z-index: -69;
+  transform: translate(-50%, 0);
+  border-radius: 100%;
+}
+
+.blue {color: #fff;}
+
+.content .d-flex {
+  flex-direction: column;
+  gap: 40px;
+}
+/*END CONTENT*/
+
+/* ABOUT SECTION */
+#about {
+  padding: 20vh 5vw;
+}
+.dark,
+.form-control:focus {
+  background: #02052e;
+}
+/*END ABOUT*/
+
+/* PROJECT SECTION */
+#projects {
+  padding: 10vh 0;
+}
+
+.d-flex .dark-blue {
+  border-radius: 2.2rem;
+  border: 0.2rem solid lightgrey;
+}
+
+/* END PROJECT SECTION */
+
+/* CONTACT */
+#contact .container .row {margin-top: 2rem;}
+
+img {margin: 0 auto;}
+
+.cont {
+  gap: 20px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.cont .row .col {
+  font-size: 0.8rem;
+  display: flex; 
+  align-items: center;
+  margin-top: -30px;
+}
+
+form {
+  flex-direction: column;
+}
+
+form > img {
+  width: 100px;
+}
+
+.cont {
+  flex-direction: column;
+  gap: 30px;
+}
+/* END CONTACT */
+
+p {
+  font-family: Sans-Serif;
+}
+
+@media (min-width: 678px) {
+  .navbar .collapse {
+    border-top: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content .d-flex {
+    justify-content: center;
+  }
+
+  .content .d-flex .card {height: 345px;}
+
+  .display-6 {
+    width: 80%;
+  }
+
+  .landing-page .d-flex .btn {
+    width: 25%;
+  }
+
+  .landing-page .d-flex {
+    text-align: left;
+  }
+
+  .landing-page img {
+    width: 700px;
+    position: relative;
+    bottom: -10vh;
+  }
+
+  .circle {
+    top: 48%;
+  }
+
+  .blue {
+    color: rgb(36, 54, 102);
+  }
+
+  .cont {
+    flex-direction: row;
+    justify-content: center;
+    gap: 140px;
+  }
+
+  #content .container {
+    align-content: center;
+  }
+
+  form img {
+    width: 400px;
+  }
+
+  form div .row {
+    align-content: center;
+  }
+  
+  .cont, form, .content .d-flex {
+    flex-direction: row;
+   }
+  
+  div .d-flex .btn {
+    width: 50%;
+  }
+}
