@@ -1,2 +1,2 @@
 # portfolio
-[devonex.netlify.app](devonex.netlify.app)
+[devonex.netlify.app](https://devonex.netlify.app/)
